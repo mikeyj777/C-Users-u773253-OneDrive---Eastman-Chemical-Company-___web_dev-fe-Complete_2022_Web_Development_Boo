@@ -1,0 +1,62 @@
+/*********************TAG SELECTORS*********************/
+
+h1 {
+    color: rgb(164,63,63);
+    font-size: 50px;
+}
+
+img {
+    background-color: khaki;
+    width: 20%;
+}
+
+img:hover {
+    background-color: black;
+}
+
+p {
+    font-style: italic;
+}
+
+body {
+    background-color: #e0ebe8;
+}
+
+ul {
+    margin: 0;
+}
+ul li {
+    list-style: none;
+    color: green;
+    float: left;
+    font-size: 40px;
+    transition: 0.8s;
+}
+
+ul:hover li {
+    transform: rotateX(360deg);
+}
+
+/*********************CLASS SELECTORS*********************/
+
+.bacon {
+    background-color: khaki;
+}
+
+.broccoli {
+    background-color: rosybrown;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+/*********************ID SELECTORS*********************/
+
+#heading {
+    color: orange;
+}
+
+#heading:hover {
+    color: #e0ebe8;
+}
