@@ -3,11 +3,24 @@
 body {
     background-color: #e0ebe8;
     text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*********************CLASS SELECTORS*********************/
 
-.top_box {
+.top-container {
     padding-top:100px;
     position:relative;
     background-color: #b2cdc5;
@@ -16,6 +29,11 @@ body {
 
 .cloud {
     position:absolute;
+}
+
+.section-header-images {
+    border-radius: 50%;
+    height:200px;
 }
 
 .top-cloud {
@@ -28,16 +46,16 @@ body {
     left:300px;
 }
 
-.mid_box {
-    height: 200px;
-    width: 200px;
-    background-color: red;
+.middle-container {
+
 }
 
-.btm_box {
-    height: 200px;
-    width: 200px;
-    background-color: yellow;
+.bottom-container {
+    text-align: left;
+}
+
+.footer-link {
+    
 }
 
 .dad_class {
