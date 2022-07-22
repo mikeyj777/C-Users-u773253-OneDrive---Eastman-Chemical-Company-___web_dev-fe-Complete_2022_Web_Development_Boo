@@ -2,13 +2,37 @@
 
 body {
     background-color: #e0ebe8;
-    margin: 0px;
+    text-align: center;
 }
 
 /*********************CLASS SELECTORS*********************/
 
+.cloud-box {
+    position:relative;
+    height: 100px;
+}
+
+.cloud {
+    position:absolute;
+}
+
+.mountain-img {
+    position:relative;
+    top:100px;
+}
+
+.top-cloud {
+    right:300px;
+}
+
+.btm-cloud {
+    top:200px;
+    left:300px;
+}
+
 .top_box {
     background-color: #b2cdc5;
+    height:500px;
 }
 
 .top_header {
