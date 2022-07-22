@@ -1,0 +1,32 @@
+/*********************TAG SELECTORS*********************/
+
+body {
+    background-color: #e0ebe8;
+    margin: 0px;
+}
+
+/*********************CLASS SELECTORS*********************/
+
+.top_box {
+    background-color: #b2cdc5;
+}
+
+.top_header {
+    margin-top: 0;
+}
+
+.mid_box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.btm_box {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+
+/*********************ID SELECTORS*********************/
+
+
