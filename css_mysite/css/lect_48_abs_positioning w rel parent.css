@@ -1,8 +1,15 @@
 body {
-    margin: 0px
+    margin: 0px;
 }
 
-div {
+.container {
+    position:relative;
+    height: 300px;
+    width: 300px;
+    background-color: peru;
+}
+
+.block {
     height: 100px;
     width: 100px;
     position:absolute;
@@ -10,16 +17,18 @@ div {
 
 .red {
     background-color: red;
-    left:200px;
-    top:200px;
+    top:0;
+    right:0;
 }
 
 .blue {
     background-color: blue;
+    top:0;
     left:100px;
-    top:100px;
 }
 
 .yellow {
     background-color: yellow;
+    top:0;
+    left:0;
 }
