@@ -1,0 +1,26 @@
+.red {
+    display:inline-block;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+}
+
+.blue {
+    display:inline-block;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    right: 100px;
+}
+
+.yellow {
+    display:inline-block;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    right: 100px;
+}

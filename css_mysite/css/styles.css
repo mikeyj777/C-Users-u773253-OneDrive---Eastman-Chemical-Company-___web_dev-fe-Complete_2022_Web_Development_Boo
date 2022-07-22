@@ -27,6 +27,10 @@ body {
     background-color: yellow;
 }
 
+.dad_class {
+    text-decoration:underline;
+}
+
 /*********************ID SELECTORS*********************/
 
 
