@@ -13,9 +13,17 @@ h1 {
     padding: 3% 15%;
 }
 
-/* .nav-item {
+.nav-item {
     padding: 0 20px;
-} */
+}
+
+.rotateimg {
+    -webkit-transform:rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
 
 /* ids */
 
