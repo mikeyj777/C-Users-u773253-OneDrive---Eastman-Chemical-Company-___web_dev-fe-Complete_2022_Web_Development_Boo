@@ -1,0 +1,26 @@
+p {
+    color: red;
+}
+
+.px-based {
+    font-size: 30px;
+}
+
+.pct-based {
+    font-size: 200%;
+}
+
+
+@media (max-width: 500px) {
+    p {
+        color: blue;
+    }
+
+    .px-based {
+        font-size: 60px;
+    }
+    
+    .pct-based {
+        font-size: 400%;
+    }
+}
