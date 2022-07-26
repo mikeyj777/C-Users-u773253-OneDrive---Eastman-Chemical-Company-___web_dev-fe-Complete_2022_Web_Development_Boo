@@ -10,6 +10,12 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
 h3 {
     font-size: 2.5rem;
     line-height: 1.5;
@@ -83,6 +89,25 @@ p {
     margin: 0 30%;
 }
 
+.testimonials-image {
+    border-radius: 100%;
+    margin: 20px;
+    width:10%
+}
+
+.testimonials-name {
+    font-size: 1.75rem;
+}
+
+.press-img {
+    margin:50px;
+    height: 65px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
 /* ids */
 
 #title {
@@ -92,5 +117,18 @@ p {
 
 #features {
     margin: 100px auto;
+    text-align: center;
+}
+
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 50px;
     text-align: center;
 }
