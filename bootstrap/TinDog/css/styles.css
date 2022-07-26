@@ -110,6 +110,10 @@ p {
     padding: 7% 15%;
 }
 
+.icons {
+    margin: 1% 1.5%;
+}
+
 /* ids */
 
 #title {
@@ -140,4 +144,30 @@ p {
 #pricing {
     padding: 100px;
     text-align: center;
+}
+
+#cta {
+
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20% 50px 20%;
+}
+
+#footer {
+    background-color: #fff;
+    padding:100px 0;
+    text-align: center;
+}
+
+@media (max-width: 1028px) {
+    .phone-img {
+        position:static;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: center;
+    }
+
 }
