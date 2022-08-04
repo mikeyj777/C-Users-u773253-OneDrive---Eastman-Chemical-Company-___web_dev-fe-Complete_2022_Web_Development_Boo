@@ -36,6 +36,9 @@ function declare_winner() {
         }
     }
     
+    var h1 = document.querySelector("h1");
+    h1.textContent = "Player " + max_player + " Wins!"
+
 }
 
 rollDiceForAllPlayers();
