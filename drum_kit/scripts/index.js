@@ -15,12 +15,14 @@ function handleClick() {
 
     orig_color = this.style.color;
     this.style.color = "white";
+    this.classList.toggle("pressed");
 
 
 }
 
 function resetColor() {
     this.style.color = orig_color;
+    this.classList.toggle("pressed");
 }
 
 document.addEventListener("keydown", onKeyDown);
@@ -35,7 +37,7 @@ function onKeyDown(event) {
         var key_elem = document.getElementById("btn_" + key);
         orig_color = key_elem.style.color;
         key_elem.style.color = "white";
-    
+        key_elem.classList.toggle("pressed");
     }
 
 }
@@ -46,6 +48,7 @@ function onKeyUp(event) {
     if (keys.includes(key)) {
         var key_elem = document.getElementById("btn_" + key);
         key_elem.style.color = orig_color;
+        key_elem.classList.toggle("pressed");
     }
 
 }
