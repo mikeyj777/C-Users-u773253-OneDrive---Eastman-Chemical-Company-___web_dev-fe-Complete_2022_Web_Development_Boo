@@ -1,20 +1,20 @@
+var player_rolls = [0, 0];
+
+function toggleReloadTracker() {
+    if (sessionStorage.getItem("is_reloaded") === "true") {
+        sessionStorage.setItem("is_reloaded", "false");
+    } else {
+        sessionStorage.setItem("is_reloaded", "true");
+    }
+}
+
 function diceRoll() {
     return Math.floor(6 * Math.random()) + 1;
 }
 
-var player_rolls = [0, 0]
-
 function rollDiceForAllPlayers() {
     for (var i = 0; i < player_rolls.length; i++) {
-        player_rolls.push(diceRoll());
-    }
-}
-
-function toggleReloadTracker() {
-    if (sessionStorage.getItem("is_reloaded") === "true") {
-        sessionStorage.getItem("is_reloaded") = "false"
-    } else {
-        sessionStorage.getItem("is_reloaded") = "true"
+        player_rolls[i] = diceRoll();
     }
 }
 
@@ -29,15 +29,21 @@ function set_images() {
 function declare_winner() {
     max_val = -1;
     max_player = -1;
+    var tie_game = true;
     for (var i = 0; i < player_rolls.length; i++) {
+        if ((player_rolls[i] != max_val) && (max_val > 0)) {
+            tie_game = false;
+        }
         if (player_rolls[i] > max_val) {
             max_val = player_rolls[i];
             max_player = i;
         }
     }
+
+    max_player += 1;
     
     var h1 = document.querySelector("h1");
-    h1.textContent = "Player " + max_player + " Wins!"
+    h1.textContent = "Player " + max_player + " Wins!";
 
 }
 
