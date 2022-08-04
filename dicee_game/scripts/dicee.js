@@ -43,7 +43,11 @@ function declare_winner() {
     max_player += 1;
     
     var h1 = document.querySelector("h1");
-    h1.textContent = "Player " + max_player + " Wins!";
+    var out_text = "Player " + max_player + " Wins!";
+    if (tie_game) {
+        out_text = "It's a Tie!!!!!";
+    }
+    h1.textContent = out_text;
 
 }
 
