@@ -4,22 +4,15 @@ var index = -1;
 var orig_color;
 var game_on = false;
 
-function game_over() {
-
-    $("body").addClass("game-over")
-
+$(document).keypress(function(e) {
+    
+    game_on = true;
+    
     setTimeout(function() {
-        $("body").removeClass("game-over")
-    }, 100);
+        add_button();
+    }, 500);
 
-    play_sound('wrong')
-
-    game_on = false;
-    btn_sequence = [];
-    index = -1;
-    $("#level-title").text("Game Over, Press Any Key to Restart");
-
-}
+});
 
 function add_button() {
 
@@ -40,29 +33,6 @@ function add_button() {
     index = -1;
 
 }
-
-function play_sound(sound_nm) {
-    var audio = new Audio('assets/sounds/' + sound_nm + '.mp3');
-    audio.play();
-}
-
-function button_flash(btn) {
-    $(btn).addClass("pressed");
-}
-
-function button_reset(btn) {
-    $(btn).removeClass("pressed");
-}
-
-$(document).keypress(function(e) {
-    
-    game_on = true;
-    
-    setTimeout(function() {
-        add_button();
-    }, 500);
-
-});
 
 $(".game_btn").mousedown(function(e) {
 
@@ -92,3 +62,33 @@ $(".game_btn").mouseup(function(e) {
     }
 
 })
+
+function game_over() {
+
+    $("body").addClass("game-over")
+
+    setTimeout(function() {
+        $("body").removeClass("game-over")
+    }, 100);
+
+    play_sound('wrong')
+
+    game_on = false;
+    btn_sequence = [];
+    index = -1;
+    $("#level-title").text("Game Over, Press Any Key to Restart");
+
+}
+
+function play_sound(sound_nm) {
+    var audio = new Audio('assets/sounds/' + sound_nm + '.mp3');
+    audio.play();
+}
+
+function button_flash(btn) {
+    $(btn).addClass("pressed");
+}
+
+function button_reset(btn) {
+    $(btn).removeClass("pressed");
+}
