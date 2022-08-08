@@ -1,0 +1,10 @@
+.big-title {
+    font-size:10rem;
+    color: purple;
+}
+
+.anim-out {
+    opacity: 0.5;
+    color:red;
+    font-size: 0.5rem;
+}
