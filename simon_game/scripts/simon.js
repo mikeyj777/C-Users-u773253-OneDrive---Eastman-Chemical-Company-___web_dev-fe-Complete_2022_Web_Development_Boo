@@ -6,6 +6,14 @@ var game_on = false;
 
 function game_over() {
 
+    $("body").addClass("game-over")
+
+    setTimeout(function() {
+        $("body").removeClass("game-over")
+    }, 100);
+
+    play_sound('wrong')
+
     game_on = false;
     btn_sequence = [];
     index = -1;
@@ -27,7 +35,7 @@ function add_button() {
 
     setTimeout(function() {
         button_reset(btn_to_add);
-      }, 100);
+    }, 250);
 
     index = -1;
 
@@ -52,7 +60,7 @@ $(document).keypress(function(e) {
     
     setTimeout(function() {
         add_button();
-    });
+    }, 500);
 
 });
 
@@ -74,7 +82,11 @@ $(".game_btn").mouseup(function(e) {
             game_over();
         } else {
             play_sound(e.target.id);
-            add_button();
+            if (index == btn_sequence.length - 1) {
+                setTimeout(function() {
+                    add_button();
+                }, 500);
+            }
         }
 
     }
